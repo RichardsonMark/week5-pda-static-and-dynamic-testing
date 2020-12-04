@@ -14,8 +14,6 @@ Only comment on errors that would stop the tests running.
 
 ```python
 
-
-# there's no class defined/initialised to say what makes up a game
 class CardGame:
 
 # this function has an error when checking the value of the card. should have double equals ==, not single =. 
@@ -28,6 +26,8 @@ class CardGame:
    
 # this function has a spelling error when defining the function. should read def, not dif
 # there should also be a comma between card1 and card2
+# lines 2,3 and4 should be indented one more step
+# card on line 3 should say card1
   dif highest_card(self, card1 card2):
   if card1.value > card2.value:
     return card
@@ -35,7 +35,9 @@ class CardGame:
     return card2
   
 
-# this function has an error when defining the initial value of 'total. should be total = "" to give it an initial empty/0 value
+# this function has an error when defining the initial value of 'total'. should be given an initial empty/0 value
+# the indentation of the lines of code needs realigned. first 4 lines needs indented one place, last line needs unindented
+# on the last line, need to also convert total to a string
 def cards_total(self, cards):
   total
   for card in cards:
