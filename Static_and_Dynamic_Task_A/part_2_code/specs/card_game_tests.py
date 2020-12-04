@@ -18,17 +18,17 @@ class TestCardGame(unittest.TestCase):
 # @unittest.skip("Delete this line to run the test")
     def test_check_for_ace_is_ace(self):
 
-        self.assertEqual(1, self.card_game.check_for_ace(self.card4))
+        self.assertEqual(True, self.card_game.check_for_ace(self.card4))
 
 # @unittest.skip("Delete this line to run the test")
     def test_check_for_ace_not_ace(self):
 
-        self.assertEqual(1, self.card_game.check_for_ace(self.card3))
+        self.assertEqual(False, self.card_game.check_for_ace(self.card3))
 
 #    @unittest.skip("Delete this line to run the test")
     def test_highest_card(self):
-        self.assertEqual(7, self.card_game.highest_card(self.card1, self.card2))
+        self.assertEqual(self.card1, self.card_game.highest_card(self.card1, self.card2))
 
 #    @unittest.skip("Delete this line to run the test")
     def test_cards_total(self):
-        self.assertEqual(13, self.card_game.cards_total(self.cards))
+        self.assertEqual("You have a total of 16", self.card_game.cards_total(self.cards))
