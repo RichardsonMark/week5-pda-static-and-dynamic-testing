@@ -37,7 +37,8 @@ class CardGame:
 
 # this function has an error when defining the initial value of 'total'. should be given an initial empty/0 value
 # the indentation of the lines of code needs realigned. first 4 lines needs indented one place, last line will be in correct place when the others are indented
-# on the last line, need to also convert total to a string so that can append/concatenate to the rest of the string
+# on the last line, need to add a space before second double quote to allow proper sentence/string 
+# and also convert 'total' to a string so that we can append/concatenate to the rest of the string
 def cards_total(self, cards):
   total
   for card in cards:
